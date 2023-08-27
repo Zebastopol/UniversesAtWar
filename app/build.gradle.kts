@@ -24,7 +24,7 @@ android {
         }
     }
     buildFeatures{
-        viewBinding
+        viewBinding = true
         compose
         composeOptions {
             kotlinCompilerExtensionVersion = "1.4.3"
@@ -42,6 +42,8 @@ android {
 
 dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.1")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.1")
     val composeBom = platform("androidx.compose:compose-bom:2023.01.00")
     implementation(composeBom)
     androidTestImplementation(composeBom)
